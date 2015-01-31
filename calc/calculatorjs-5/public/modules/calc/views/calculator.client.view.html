@@ -1,0 +1,15 @@
+<!--<section data-ng-controller="CalculatorController">-->
+<section data-ng-controller="calcInterfaceCtrl" >
+	This is the Calculator
+ <!--<div ng-app="calc">-->
+    <!--<div ng-controller="calcInterfaceCtrl" ng-controller="calcHistoryCtrl">-->
+        <!--<div class="btn-primary">this is laabel</div>-->
+        <input align="right" ng-model="calcExpression">
+        <calc-interface ctrl-expression="calcExpression" calc="calc()"></calc-interface>
+    <!--</div>-->
+    <div ng-controller="calcHistoryCtrl">
+
+        <result-interface arr-items="calcResultArr" add-item="addResult()"></result-interface>
+    </div>
+ <!--</div>-->
+</section>

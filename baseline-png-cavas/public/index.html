@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Side by side comparison</title>
+</head>
+<body>
+    <div>
+        <label for="speed-img-base64">Image (base64):</label>
+        <input type="text" id="speed-img-base64" value="N/A" />
+        <label for="speed-canvas-base64">Canvas (base64):</label>
+        <input type="text" id="speed-canvas-base64" value="N/A" />
+        <label for="speed-svg-blob">Svg (blob):</label>
+        <input type="text" id="speed-svg-blob" value="N/A" />
+        <label for="speed-pixel-base64">Canvas putImage (base64):</label>
+        <input type="text" id="speed-pixel-base64" value="N/A" />
+        <label for="speed-pixel-base64">Canvas Blob:</label>
+        <input type="text" id="speed-canvas-blob" value="N/A" />
+    </div>
+    <hr>
+
+    <div>
+        Image base64/blob:<br/>
+        <img style="border: dashed 2px gray;" id="image1" width="888" height="658"></img>
+    </div>
+    <div>
+        Canvas drawImage base64:<br/>
+        <canvas style="border: dashed 1px black;" id="canvas1" width="888" height="658"></canvas>
+    </div>
+    <div>
+        Svg blob:<br/>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="888px" height="658px">
+            <image id="image2" width="888px" height="658px"></image>
+        </svg>
+    </div>
+    <div>
+        Canvas put image:<br/>
+        <canvas style="border: dotted 1px blue;" id="canvas2" width="888" height="658"></canvas>
+    </div>
+    <div>
+        Canvas blob:<br/>
+        <canvas style="border: dotted 1px red;" id="canvas3" width="888" height="658"></canvas>
+    </div>
+
+    <script type="text/javascript" src="utility.js"></script>
+    <script type="text/javascript" src="methods/CanvasBlob.js"></script>
+    <script type="text/javascript" src="methods/CanvasDrawImage.js"></script>
+    <script type="text/javascript" src="methods/CanvasPutImageData.js"></script>
+    <script type="text/javascript" src="methods/ImgBase64.js"></script>
+    <script type="text/javascript" src="methods/SvgImageBlob.js"></script>
+    <script type="text/javascript" src="Scoreboard.js"></script>
+
+    <script src='/socket.io/socket.io.js'></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>

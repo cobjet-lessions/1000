@@ -1,0 +1,108 @@
+<section class="full col clearfix hero">
+  <div class="three-q col search">
+    <h1>Stop traveling.<br><strong><em>START</em>EXPLORING</strong></h1>
+    <form id="search" action="#/results">
+      <input type="text" name="origin" ng-model="origin" placeholder="Where are you flying from?" data-origin="origin" autocomplete="off">
+      <div class="form-alert">
+        <p>You need at least 1 passenger to start this adventure!</p>
+        <span class="indicator"></span>
+      </div>
+      <div id="passengers" class="droption" data-passenger-total="0">
+        <p data-drop-down="true" data-state="unfocused">passengers<span class="arrow"></span></p>
+        <div id="p" class="droption-menu p">
+          <div class="row clearfix">
+            <span class="type">Adults</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-adults="0"value="0">
+            </div>
+            <span class="age-range">18-64</span>
+          </div>
+          <div class="row clearfix">
+            <span class="type">Seniors</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-seniors="0"value="0">
+            </div>
+            <span class="age-range">65+</span>
+          </div>
+          <div class="row clearfix">
+            <span class="type">Youth</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-youth="0"value="0">
+            </div>
+            <span class="age-range">12-17</span>
+          </div>
+          <div class="row clearfix">
+            <span class="type">Children</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-children="0" value="0">
+            </div>
+            <span class="age-range">2-11</span>
+          </div>
+          <div class="row clearfix">
+            <span class="type">Infants (seat)</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-seat-infants="0"value="0">
+            </div>
+            <span class="age-range">under 2</span>
+          </div>
+          <div class="row clearfix">
+            <span class="type">Infants (lap)</span>
+            <div class="incrementor">
+              <button class="passenger-btn" data-button-type="increment">+</button>
+              <button class="passenger-btn" data-button-type="decrement">-</button>
+              <input data-lap-infants="0"value="0">
+            </div>
+            <span class="age-range">under 2</span>
+          </div>
+        </div>
+      </div>
+      <input type="date" name="date" id="departure" data-departure="true" data-outbound="YYYY-MM-DD">
+      <div id="stay" class="droption" data-return="date">
+        <p data-drop-down="true" data-state="unfocused">Coming back...<span class="arrow"></span></p>
+        <div id="s" class="droption-menu s">
+          <div class="row clearfix">
+            <span class="length">..in</span>
+            <div class="incrementor">
+              <button data-button-type="increment">+</button>
+              <button data-button-type="decrement">-</button>
+              <input data-days-count="0" data-one-way="false" data-return="YYYY-MM-DD" value='0'>
+            </div>
+            <span class="age-range">days</span>
+          </div>
+          <div class="row clearfix">
+            <button data-flight-type="One Way" class="big-btn one-way">NEVERRRR</button>
+          </div>
+        </div>
+      </div>
+      <button id="submit" class="inline submit" search-form-submitter ng-click="goToPage('/results/' + origin)">SEARCH</button>
+<!--       <button id="test" class="inline submit" mock-form-submitter ng-click="goToPage('/test')">MOCK RESULTS</button> -->
+    </form>
+  </div>
+  </section>
+  <section class="full col clearfix philosophy">
+    <div class="half col left purple accent">
+      <div class="three-q col">
+        <h2>FOLLOW YOUR</h2>
+        <h1>LARK</h1>
+      </div>
+    </div>
+    <div class="half col left gold accent">
+      <div class="three-q col">
+        <h2>FOLLOW YOUR</h2>
+        <h1>LARK</h1>
+      </div>
+    </div>
+
+  </section>
+  <script type="text/javascript" src="js/search-logic.js"></script>
+  <script type="text/javascript" src="js/search-ui.js"></script>

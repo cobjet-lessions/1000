@@ -1,0 +1,158 @@
+<template name="managedUsers">
+	{{> managedUsersMessage}}
+	{{> managedUsersTable}}
+	<div class="row">
+		<hr/>
+	</div>
+	{{> newUserForm}}
+</template>
+
+<template name="managedUsersMessage">
+	{{#if managedUserError}}
+	<div class="row">
+		<div class="col-md-12 alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Error:</strong> {{managedUserError}}
+		</div>
+	</div>
+	{{/if}}
+</template>
+
+<template name="managedUsersTable">
+	<div class="row">
+		<table class="table table-hover col-md-12">
+			<thead>
+			<tr>
+				<th class="col-md-3">Username</th>
+				<th class="col-md-4">Full Name</th>
+				<th class="col-md-4">Email Address</th>
+				<th class="col-md-1"></th>
+			</tr>
+			</thead>
+			<tbody>
+			{{#each systemUsers}}
+			<tr>
+				<td class="col-md-3">
+					<span class="username">{{username}}</span>
+				</td>
+				<td class="col-md-4">
+					<span class="fullName">{{profile.name}}</span>
+				</td>
+				<td class="col-md-4">
+							<span class="emailAddress">
+								{{emailAddress this}}
+							</span>
+				</td>
+				<td class="col-md-1">
+					<span class="glyphicon glyphicon-edit editUser" data-toggle="modal" data-target="#{{_id}}_edit"></span>
+					<span class="glyphicon glyphicon-remove remove-user"></span>
+					{{> managedUserEditModal}}
+				</td>
+			</tr>
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>
+
+<template name="newUserForm">
+	<div class="row">
+		<div class="col-md-6 well">
+			<form id="newUser" role="form" class="form-horizontal">
+				<legend>New User</legend>
+				{{#if newManagedUserError}}
+				<div class="row">
+					<div class="col-md-12 alert alert-danger alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<strong>Error:</strong> {{newManagedUserError}}
+					</div>
+				</div>
+				{{/if}}
+				{{> managedUserForm}}
+				<div class="form-group">
+					<div class="col-md-offset-3 col-md-9">
+						<button id="submit" type="button" class="btn btn-primary">Save changes</button>
+						<button id="cancel" type="button" class="btn">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</template>
+
+<template name="managedUserEditModal">
+	<div id="{{_id}}_edit" class="modal fade editModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Edit User</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<form role="form" class="well form-horizontal">
+								{{#if editManagedUserError}}
+									<div class="row">
+										<div class="col-md-12 alert alert-danger alert-dismissable">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<strong>Error:</strong> {{editManagedUserError}}
+										</div>
+									</div>
+								{{/if}}
+								{{> managedUserForm}}
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<span class="col-sm-12 text-right">
+							<button class="btn btn-default passwordReset">Send Password Reset Email</button>
+						</span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary editSave">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="managedUserForm">
+	<fieldset>
+		<div class="form-group">
+			<label class="col-md-3 control-label">Username</label>
+			<div class="col-md-9">
+				<input class="username form-control" type="text"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label">Full Name</label>
+			<div class="col-md-9">
+				<input class="fullName form-control" type="text"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label">Email</label>
+			<div class="col-md-9">
+				<input class="email form-control" type="text"/>
+			</div>
+		</div>
+		{{#if permissions}}
+			<div class="form-group">
+				<label class="col-md-3 control-label">Permissions</label>
+				<div class="col-md-9 permissions">
+					{{#each permissions}}
+						<div class="checkbox">
+							<label>
+								<input class="{{name}} permission" type="checkbox">
+								{{description}}
+							</label>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		{{/if}}
+	</fieldset>
+</template>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>calculator</title>
+<script type="text/javascript">
+var n;
+function eval1(Calc)
+{
+    curvalue=eval(Calc.Input.value);
+    Calc.Input.value=curvalue;
+}
+
+function f1(Calc)
+{
+    Calc.Input.value=" ";
+}
+function backspace1() {
+   curvalue = document.Calc.Input.value;
+   curlength = curvalue.length;
+   curvalue = curvalue.substring(0,curlength-1);
+   document.Calc.Input.value = curvalue;
+}
+function backspace() {
+   curvalue = document.Calc.Input.value;
+   curlength = curvalue.length;
+   curvalue = curvalue.substring(0,curlength-2);
+   document.Calc.Input.value = curvalue;
+}
+</script>
+</head>
+
+<body>
+<form name="Calc">
+<div id="cal">
+<h1 id="yy">Calculator</h1>
+<input type="text" class="screen" name="Input" readonly>
+<input name="1" type="button" id="t" value="1" title="one" OnClick="Calc.Input.value += '1'">
+<input name="2" type="button" id="t" value="2" title="two" OnClick="Calc.Input.value += '2'">
+<input name="3" type="button" id="t" value="3" title="three" OnClick="Calc.Input.value += '3'">
+<input name="4" type="button" id="t" value="4" title="four" OnClick="Calc.Input.value += '4'">
+<input name="5" type="button" id="t" value="5" title="five" OnClick="Calc.Input.value += '5'">
+<input name="6" type="button" id="t" value="6" title="six" OnClick="Calc.Input.value += '6'">
+<input name="7" type="button" id="t" value="7" title="seven" OnClick="Calc.Input.value += '7'">
+<input name="8" type="button" id="t" value="8" title="eight" OnClick="Calc.Input.value += '8'">
+<input name="9" type="button" id="t" value="9" title="nine" OnClick="Calc.Input.value += '9'">
+<input name="0" type="button" id="t" value="0" title="zero" OnClick="Calc.Input.value += '0'">
+<input name="00" type="button" id="t" value="00" title="double zero" OnClick="Calc.Input.value += '00'">
+<input name="+" type="button" id="p" value="+" title="plus" OnClick="Calc.Input.value += ' + '">
+<input name="-" type="button" id="p" value="-" title="minus" OnClick="Calc.Input.value += ' - '">
+<input name="x" type="button" id="p" value="x" title="multiplication" OnClick="Calc.Input.value += ' * '">
+<input name="÷" type="button" id="p" value="/" title="divide" OnClick="Calc.Input.value += ' / '">
+<input name="(" type="button" id="t" value="(" title="left brace" OnClick="Calc.Input.value += '('">
+<input name=")" type="button" id="t" value=")" title="right brace" OnClick="Calc.Input.value += ')'">
+<input name="%" type="button" id="t" value="%" title="percentage" OnClick="Calc.Input.value += '%'">
+<input name="CE" type="button" id="t" value="CE" title="clear" OnClick="f1(this.form)">
+<input name="." type="button" id="t" value="." title="point" OnClick="Calc.Input.value += '.'">
+<input name="{" type="button" id="t" value="{" title="left curly bracket" OnClick="Calc.Input.value += '{'">
+<input name="C" type="button" id="t" value="&#8592;" title="backspace" OnClick="backspace1()">
+<input name="C" type="button" id="t" value="&#8606;" title="double backspace" OnClick="backspace()">
+<input name="}" type="button" id="t" value="}" title="right curly bracket" OnClick="Calc.Input.value += '}'">
+<input name="=" type="button" id="e" value="=" title="equals to" OnClick="eval1(this.form)">
+<input name="re" type="reset" id="r" value="Reset" title="reset" OnClick="f1(this.form)">
+<div id="pra">Calculator</div>
+</div>
+
+</form>
+<style>
+* {
+	background:#999;
+	margin:12px;
+	vertical-align:middle;
+	margin-bottom: 14px;
+}
+#yy {
+	font-family:FangSong;
+	font-size:24px;
+	color:#00DF00;
+	text-align:center;
+	font-weight:900;
+	background:#FFF;
+}
+#cal {
+	border:0px #990 outset;
+	border-radius: 6px;
+	background-color:white;
+	margin-left:313px;
+	margin-right:750px;
+	margin-bottom:70px;
+	margin-top:50px;
+	font-family:cursive;
+	padding:17px;
+	position:fixed;
+}
+.screen {
+	height:30px;
+	text-shadow:#9C3;
+	width: 240px;
+	background:rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0,0,0,0.1);
+	/* Typography*/
+	font-size: 16px;
+	line-height: 40px;
+	color:red;
+	position:relative;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+#t {
+	width: 60px;
+	height: 30px;
+	color:#909;
+	border: 2px #FFF outset;
+	background: #9dd2ea;
+	background: linear-gradient(#9dd2ea, #8bceec);
+	border-radius: 3px;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	transition:all 0.2s ease;
+	margin-bottom: -5px;
+	position:relative;
+}
+#t:hover {
+	background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+#t:active {
+	background:#609;
+	transition: background 0.3s;
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+#p {
+	width: 60px;
+	height: 30px;
+    background:#F99;
+	color:#909;
+	border-radius: 3px;
+	position:relative;
+	background: linear-gradient(#9dd2ea, #8bceec);
+	border: 2px #FFF outset;
+	margin-bottom: -5px;
+	border-bottom: 0.2px;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+#p:hover {
+	background:#F36;
+	box-shadow: 0px 4px #F06;
+	color: white;
+}
+
+#p:active {
+	background:#9F2647;
+	transition: background 0.3s;
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+#e {
+	width: 60px;
+	height: 30px;
+	border-radius: 6px;
+	background:#C90;
+	font-family:Arial Rounded MT Bold;
+	margin-bottom: -5px;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	color:#333;
+	border: 2px #FFF outset;
+}
+#r {
+	width: 60px;
+	border-radius: 6px;
+	height: 30px;
+	margin-bottom: 5px;
+	padding-bottom: -4px;
+	background:#390;
+	color:#333;
+	border: 2px #FFF outset;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+#pra {
+border:1px gray outset;
+padding: 9px;
+color: white;
+font-family: Segoe UI;
+background: green;
+}
+#pra:hover {
+border:2px gray inset;
+padding: 9px;
+color: green;
+font-size: 14px;
+text-align: center;
+font-weight: bold;
+font-family: Segoe UI Light;
+transition: background 2s;
+background: white;
+border-radius: 6px;
+z-index:1;
+}
+</style>
+</body>
+</html>

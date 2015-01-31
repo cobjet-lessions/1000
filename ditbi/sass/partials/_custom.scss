@@ -1,0 +1,98 @@
+// Custom
+.main {
+  @include border-radius(4px);
+  @include single-box-shadow($gray-light, 5px, 2px, 8px);
+  padding: 15px;
+}
+
+.wrap {
+  width: 80em;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.item {
+  margin-bottom: 2em;
+  & > h1 {
+    font-size: 1.5em;
+    color: $gray-dark;
+    margin: 1em 0 1em 0;
+  }
+  & h1:first-of-type {
+    margin: 0em 0 .5em 0;
+  }
+}
+/*** =ADJECTIVES ***/
+.adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
+// Override
+.item.adjectives {
+  margin-bottom: .5em;
+}
+.settings {
+  display: none;
+  color: $black;
+  h1,h2,h3,h4,h5,h6 {
+    color: $whiteSmoke;
+    @include single-text-shadow;
+  }
+  background: $gray-dark;
+  padding: 10px;
+  .stack {
+    margin-bottom: .25em;
+  }
+  .item {
+    // Makes settings padding less so we can see more of the page being styled
+    margin-bottom: 0px;
+  }
+  .row .row {
+    margin-bottom: 0.5em;
+  }
+}
+.code {
+  //border: .25em solid $soft-white;
+  padding: 10px;
+  & > h1 {
+    font-size: .875em;
+    color: #9f9f9f;
+    margin: 1em 0 1em 0;
+  }
+}
+/*** =COLOPHON ***/
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
+  padding: 1.714em 0;
+  border-top: thin solid $soft-white;
+  margin-top: 1.714em;
+}
+
+.export, .styleguide {
+  margin-top: 0.65em;
+}
+
+.slider-wrap {
+  margin: 0; padding: 0;
+  border-top: solid 3px $brownDuller;
+  min-height: 2.75em;
+}
+.slider {
+  color: darken($whiteIsabelline, 1%);
+  width: 10em;
+  text-align: center;
+  padding: .5em 1em .65em;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  background: $pinkFlickr;
+  border-top: none;
+  @include border-bottom-radius(8px);
+  &:hover {
+    color: $white;
+    @include single-text-shadow;
+    border-top: none;
+  }
+}

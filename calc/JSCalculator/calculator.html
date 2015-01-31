@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>My Amazing Calculator App</title>
+    <link href="screen.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <script>
+      input = "";
+
+      function handleClick(data) {
+        input += data;
+        document.getElementById("output").value = input;
+        console.log(input)
+      }
+
+      function evaluateExpression(data) {
+        input = document.getElementById("output").value = eval(input);
+      }
+
+      function clearInput(data) {
+        input = document.getElementById("output").value = " ";
+      }
+
+      function powerTwo(data) {
+        input = document.getElementById("output").value = input*input;
+      }
+
+      function squareRoot(data) {
+        input = document.getElementById("output").value = Math.sqrt(input);
+      }
+
+      function powerTo(data) {
+        input += data;
+        document.getElementById("output").value = input;
+        console.log(input)
+      }
+
+    </script>
+
+    <h1>My Amazing Javascript / HTML Calculator</h1>
+
+    <div id="calculator">
+
+      <form>
+        <input type="text" id="output" />
+      </form>
+
+      <button onclick="handleClick(1)">1</button>
+      <button onclick="handleClick(2)">2</button>
+      <button onclick="handleClick(3)">3</button><br>
+      <button onclick="handleClick(4)">4</button>
+      <button onclick="handleClick(5)">5</button>
+      <button onclick="handleClick(6)">6</button><br>
+      <button onclick="handleClick(7)">7</button>
+      <button onclick="handleClick(8)">8</button>
+      <button onclick="handleClick(9)">9</button><br>
+      <button onclick="handleClick('+')">+</button>
+      <button onclick="handleClick(0)">0</button>
+      <button onclick="handleClick('-')">-</button><br>
+      <button onclick="handleClick('/')">/</button>
+      <button onclick="handleClick('*')">*</button>
+      <button onclick="evaluateExpression()">=</button><br>
+      <button onclick="clearInput">c</button>
+      <button onclick="powerTwo">^</button>
+      <button onclick="squareRoot">sqr</button>
+      <button onclick="powerTo(',')">^x</button>
+
+    </div>
+
+  </body>
+</html>

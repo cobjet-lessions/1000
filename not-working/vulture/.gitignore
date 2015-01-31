@@ -1,0 +1,13 @@
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.idea
+.DS_Store
+vulture-snapshots
+bower_components/
+cities/
+.jshintrc
+api-key.json
+.sass-cache/
+.divshot-cache/

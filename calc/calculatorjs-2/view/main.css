@@ -1,0 +1,33 @@
+div.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#calculator {
+
+}
+
+#calculator .numbers {
+    width: 115px;
+    float: left;
+    border-right: 2px solid black;
+}
+
+#calculator button {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+#calculator .numbers button:last-child {
+    width: 64px;
+}
+
+#calculator .operations {
+    float: left;
+    width: 35px;
+}
+
+#calculator .output input[type="text"] {
+    text-align: right;
+}

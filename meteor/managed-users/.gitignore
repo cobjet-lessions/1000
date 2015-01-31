@@ -1,0 +1,4 @@
+smart.lock
+.build*
+.idea
+*.iml

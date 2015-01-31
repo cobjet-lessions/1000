@@ -1,0 +1,19 @@
+{
+  "description": "baseline-png-canvas",
+  "version": "0.0.3",
+  "author": "admin@cobjet.com",
+  "dependencies": {
+    "socket.io": "*",
+    "node-static": "*",
+    "socket.io-client": "*",
+    "uglify-js": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "subdomain": "xyz",
+  "scripts": {
+    "start": "/server/server.js"
+  },
+  "name": "baseline-png-canvas"
+}

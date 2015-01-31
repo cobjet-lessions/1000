@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/alex/.local/n/bin/node',
+1 verbose cli   '/Users/alex/.local/n/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/alex/dev/cobjet/lessions/vulture',
+5 verbose install   [ 'async',
+5 verbose install     'q',
+5 verbose install     'bower',
+5 verbose install     'grunt',
+5 verbose install     'grunt-contrib-sass',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'http-server',
+5 verbose install     'karma',
+5 verbose install     'karma-chrome-launcher',
+5 verbose install     'karma-jasmine',
+5 verbose install     'protractor',
+5 verbose install     'shelljs',
+5 verbose install     'tmp' ] ]
+6 info preinstall vulture@0.0.0
+7 warn package.json karma-chrome-launcher@0.1.7 No README data
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping bower@^1.3.1 /Users/alex/dev/cobjet/lessions/vulture
+10 verbose already installed skipping grunt@^0.4.5 /Users/alex/dev/cobjet/lessions/vulture
+11 verbose already installed skipping grunt-contrib-sass@^0.7.4 /Users/alex/dev/cobjet/lessions/vulture
+12 verbose already installed skipping grunt-contrib-watch@^0.6.1 /Users/alex/dev/cobjet/lessions/vulture
+13 verbose already installed skipping http-server@^0.6.1 /Users/alex/dev/cobjet/lessions/vulture
+14 verbose already installed skipping karma@^0.12.16 /Users/alex/dev/cobjet/lessions/vulture
+15 verbose already installed skipping karma-chrome-launcher@^0.1.4 /Users/alex/dev/cobjet/lessions/vulture
+16 verbose already installed skipping karma-jasmine@^0.1.5 /Users/alex/dev/cobjet/lessions/vulture
+17 verbose already installed skipping protractor@~1.0.0 /Users/alex/dev/cobjet/lessions/vulture
+18 verbose already installed skipping shelljs@^0.2.6 /Users/alex/dev/cobjet/lessions/vulture
+19 verbose already installed skipping tmp@0.0.23 /Users/alex/dev/cobjet/lessions/vulture
+20 verbose already installed skipping async@^0.9.0 /Users/alex/dev/cobjet/lessions/vulture
+21 verbose already installed skipping q@^1.0.1 /Users/alex/dev/cobjet/lessions/vulture
+22 silly resolved []
+23 info build /Users/alex/dev/cobjet/lessions/vulture
+24 verbose linkStuff [ false, false, false, '/Users/alex/dev/cobjet/lessions' ]
+25 info linkStuff vulture@0.0.0
+26 verbose linkBins vulture@0.0.0
+27 verbose linkMans vulture@0.0.0
+28 verbose rebuildBundles vulture@0.0.0
+29 verbose rebuildBundles [ '.bin',
+29 verbose rebuildBundles   'angular',
+29 verbose rebuildBundles   'async',
+29 verbose rebuildBundles   'bower',
+29 verbose rebuildBundles   'grunt',
+29 verbose rebuildBundles   'grunt-contrib-sass',
+29 verbose rebuildBundles   'grunt-contrib-watch',
+29 verbose rebuildBundles   'http-server',
+29 verbose rebuildBundles   'karma',
+29 verbose rebuildBundles   'karma-chrome-launcher',
+29 verbose rebuildBundles   'karma-jasmine',
+29 verbose rebuildBundles   'protractor',
+29 verbose rebuildBundles   'q',
+29 verbose rebuildBundles   'shelljs',
+29 verbose rebuildBundles   'tmp' ]
+30 verbose rebuild bundle /Users/alex/dev/cobjet/lessions/vulture/node_modules/angular
+31 info build /Users/alex/dev/cobjet/lessions/vulture/node_modules/angular
+32 info preinstall angular@1.3.11
+33 verbose linkStuff [ false,
+33 verbose linkStuff   false,
+33 verbose linkStuff   false,
+33 verbose linkStuff   '/Users/alex/dev/cobjet/lessions/vulture/node_modules' ]
+34 info linkStuff angular@1.3.11
+35 verbose linkBins angular@1.3.11
+36 verbose linkMans angular@1.3.11
+37 verbose rebuildBundles angular@1.3.11
+38 info install angular@1.3.11
+39 info postinstall angular@1.3.11
+40 info install vulture@0.0.0
+41 info postinstall vulture@0.0.0
+42 verbose unsafe-perm in lifecycle true
+43 info vulture@0.0.0 Failed to exec postinstall script
+44 error vulture@0.0.0 postinstall: `bower install`
+44 error Exit status 1
+45 error Failed at the vulture@0.0.0 postinstall script.
+45 error This is most likely a problem with the vulture package,
+45 error not with npm itself.
+45 error Tell the author that this fails on your system:
+45 error     bower install
+45 error You can get their info via:
+45 error     npm owner ls vulture
+45 error There is likely additional logging output above.
+46 error System Darwin 13.4.0
+47 error command "/Users/alex/.local/n/bin/node" "/Users/alex/.local/n/bin/npm" "install"
+48 error cwd /Users/alex/dev/cobjet/lessions/vulture
+49 error node -v v0.10.36
+50 error npm -v 1.4.28
+51 error code ELIFECYCLE
+52 verbose exit [ 1, true ]

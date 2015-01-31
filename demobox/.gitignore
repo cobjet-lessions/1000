@@ -1,0 +1,13 @@
+*.swp
+node_modules
+.module-cache
+www/demo.html
+www/react-demobox.js
+/build
+/pages
+scripts/tmp
+themes.md
+*.swo
+/css
+/lib-compiled
+/demobox*.tgz

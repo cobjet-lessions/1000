@@ -1,0 +1,12 @@
+{
+    "name": "ditbi",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "latest",
+        "zepto": "latest",
+        "modernizr": "latest",
+        "underscore": "latest",
+        "select2": "latest"
+    }
+}
+

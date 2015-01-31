@@ -1,0 +1,6 @@
+calculator
+==========
+
+A Simple Calculator with Simple CSS and JS.
+this is very handy and with button Flavor....
+Copyright @ Pranab 2014...

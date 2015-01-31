@@ -1,0 +1,281 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/alex/.local/n/bin/node',
+1 verbose cli   '/Users/alex/.local/n/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json calculator@0.0.1 No repository field.
+5 warn package.json calculator@0.0.1 Invalid dependency: grunt-karma {}
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/alex/dev/cobjet/lessions/calc/calculatorjs-6',
+7 verbose install   [ 'express',
+7 verbose install     'mongoose',
+7 verbose install     'async',
+7 verbose install     'jade',
+7 verbose install     'coffee-script',
+7 verbose install     'grunt',
+7 verbose install     'grunt-autoprefixer',
+7 verbose install     'grunt-bower-install',
+7 verbose install     'grunt-concurrent',
+7 verbose install     'grunt-contrib-clean',
+7 verbose install     'grunt-contrib-coffee',
+7 verbose install     'grunt-contrib-compass',
+7 verbose install     'grunt-contrib-concat',
+7 verbose install     'grunt-contrib-copy',
+7 verbose install     'grunt-contrib-cssmin',
+7 verbose install     'grunt-contrib-htmlmin',
+7 verbose install     'jpegtran-bin',
+7 verbose install     'grunt-contrib-imagemin',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-uglify',
+7 verbose install     'grunt-contrib-watch',
+7 verbose install     'grunt-google-cdn',
+7 verbose install     'grunt-newer',
+7 verbose install     'grunt-ngmin',
+7 verbose install     'grunt-rev',
+7 verbose install     'grunt-svgmin',
+7 verbose install     'grunt-usemin',
+7 verbose install     'jshint-stylish',
+7 verbose install     'load-grunt-tasks',
+7 verbose install     'time-grunt',
+7 verbose install     'grunt-express-server',
+7 verbose install     'grunt-open',
+7 verbose install     'connect-livereload',
+7 verbose install     'karma-ng-scenario',
+7 verbose install     'karma-script-launcher',
+7 verbose install     'karma-chrome-launcher',
+7 verbose install     'karma-firefox-launcher',
+7 verbose install     'karma-html2js-preprocessor',
+7 verbose install     'karma-jasmine',
+7 verbose install     'karma-coffee-preprocessor',
+7 verbose install     'requirejs',
+7 verbose install     'karma-requirejs',
+7 verbose install     'karma-phantomjs-launcher',
+7 verbose install     'karma',
+7 verbose install     'karma-ng-html2js-preprocessor',
+7 verbose install     'grunt-contrib-jade',
+7 verbose install     'mocha',
+7 verbose install     'karma-mocha',
+7 verbose install     'karma-chai',
+7 verbose install     'grunt-html2js',
+7 verbose install     'grunt-contrib-stylus' ] ]
+8 info preinstall calculator@0.0.1
+9 warn package.json karma-mocha@0.1.10 No README data
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping grunt-concurrent@~0.4.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+12 verbose already installed skipping grunt-contrib-clean@~0.5.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+13 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+14 verbose already installed skipping grunt-contrib-compass@~0.6.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+15 verbose already installed skipping grunt-contrib-concat@~0.3.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+16 verbose already installed skipping grunt-contrib-copy@~0.4.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+17 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+18 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+19 verbose already installed skipping jpegtran-bin@0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+20 verbose already installed skipping grunt-contrib-imagemin@~0.3.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+21 verbose already installed skipping grunt-contrib-jshint@~0.7.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+22 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+23 verbose already installed skipping grunt-contrib-watch@~0.5.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+24 verbose already installed skipping grunt-google-cdn@~0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+25 verbose already installed skipping grunt-newer@~0.5.4 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+26 verbose already installed skipping grunt-ngmin@~0.0.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+27 verbose already installed skipping grunt-rev@~0.1.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+28 verbose already installed skipping grunt-svgmin@~0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+29 verbose already installed skipping grunt-usemin@~2.0.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+30 verbose already installed skipping jshint-stylish@~0.1.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+31 verbose already installed skipping load-grunt-tasks@~0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+32 verbose already installed skipping time-grunt@~0.2.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+33 verbose already installed skipping grunt-express-server@~0.4.5 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+34 verbose already installed skipping grunt-open@~0.2.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+35 verbose already installed skipping connect-livereload@~0.3.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+36 verbose already installed skipping karma-ng-scenario@~0.1.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+37 verbose already installed skipping karma-script-launcher@~0.1.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+38 verbose already installed skipping karma-chrome-launcher@~0.1.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+39 verbose already installed skipping karma-firefox-launcher@~0.1.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+40 verbose already installed skipping karma-html2js-preprocessor@~0.1.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+41 verbose already installed skipping karma-jasmine@~0.1.5 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+42 verbose already installed skipping karma-coffee-preprocessor@~0.1.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+43 verbose already installed skipping requirejs@~2.1.9 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+44 verbose already installed skipping karma-requirejs@~0.2.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+45 verbose already installed skipping karma-phantomjs-launcher@~0.1.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+46 verbose already installed skipping karma@~0.10.9 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+47 verbose already installed skipping karma-ng-html2js-preprocessor@~0.1.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+48 verbose already installed skipping grunt-contrib-jade@~0.9.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+49 verbose already installed skipping mocha@~1.16.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+50 verbose already installed skipping karma-mocha@~0.1.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+51 verbose already installed skipping karma-chai@0.0.2 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+52 verbose already installed skipping grunt-html2js@~0.2.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+53 verbose already installed skipping grunt-contrib-stylus@~0.11.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+54 verbose already installed skipping express@~3.4.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+55 verbose already installed skipping mongoose@~3.5.5 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+56 verbose already installed skipping async@~0.2.9 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+57 verbose cache add [ 'jade@latest', null ]
+58 verbose cache add name=undefined spec="jade@latest" args=["jade@latest",null]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: 'jade@latest',
+59 verbose parsed url   path: 'jade@latest',
+59 verbose parsed url   href: 'jade@latest' }
+60 verbose already installed skipping coffee-script@~1.6.3 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+61 verbose already installed skipping grunt@~0.4.1 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+62 verbose cache add name="jade" spec="latest" args=["jade","latest"]
+63 verbose parsed url { protocol: null,
+63 verbose parsed url   slashes: null,
+63 verbose parsed url   auth: null,
+63 verbose parsed url   host: null,
+63 verbose parsed url   port: null,
+63 verbose parsed url   hostname: null,
+63 verbose parsed url   hash: null,
+63 verbose parsed url   search: null,
+63 verbose parsed url   query: null,
+63 verbose parsed url   pathname: 'latest',
+63 verbose parsed url   path: 'latest',
+63 verbose parsed url   href: 'latest' }
+64 verbose addNamed [ 'jade', 'latest' ]
+65 verbose addNamed [ null, null ]
+66 verbose already installed skipping grunt-autoprefixer@~0.4.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+67 silly lockFile 50c7aeb0-jade-latest jade@latest
+68 verbose lock jade@latest /Users/alex/.npm/50c7aeb0-jade-latest.lock
+69 verbose already installed skipping grunt-bower-install@~0.7.0 /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+70 info addNameTag [ 'jade', 'latest' ]
+71 verbose request where is /jade
+72 verbose request registry https://registry.npmjs.org/
+73 verbose request id 4b0a002f6d77696e
+74 verbose url raw /jade
+75 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+76 verbose url resolved https://registry.npmjs.org/jade
+77 verbose request where is https://registry.npmjs.org/jade
+78 info trying registry request attempt 1 at 07:02:25
+79 verbose etag "3ICLDY2ZNECP1KFUSZMV6PYOC"
+80 http GET https://registry.npmjs.org/jade
+81 http 304 https://registry.npmjs.org/jade
+82 silly registry.get cb [ 304,
+82 silly registry.get   { date: 'Sat, 31 Jan 2015 15:02:26 GMT',
+82 silly registry.get     server: 'Apache',
+82 silly registry.get     via: '1.1 varnish',
+82 silly registry.get     'last-modified': 'Sat, 31 Jan 2015 15:02:26 GMT',
+82 silly registry.get     'cache-control': 'max-age=60',
+82 silly registry.get     etag: '"3ICLDY2ZNECP1KFUSZMV6PYOC"',
+82 silly registry.get     age: '0',
+82 silly registry.get     'x-served-by': 'cache-sjc3124-SJC',
+82 silly registry.get     'x-cache': 'HIT',
+82 silly registry.get     'x-cache-hits': '1',
+82 silly registry.get     'x-timer': 'S1422716546.232401,VS0,VE152',
+82 silly registry.get     vary: 'Accept',
+82 silly registry.get     'content-length': '0',
+82 silly registry.get     'keep-alive': 'timeout=10, max=50',
+82 silly registry.get     connection: 'Keep-Alive' } ]
+83 verbose etag https://registry.npmjs.org/jade from cache
+84 verbose addNamed [ 'jade', '1.9.1' ]
+85 verbose addNamed [ '1.9.1', '1.9.1' ]
+86 silly lockFile 9901c118-jade-1-9-1 jade@1.9.1
+87 verbose lock jade@1.9.1 /Users/alex/.npm/9901c118-jade-1-9-1.lock
+88 silly lockFile 9901c118-jade-1-9-1 jade@1.9.1
+89 silly lockFile 9901c118-jade-1-9-1 jade@1.9.1
+90 silly lockFile 50c7aeb0-jade-latest jade@latest
+91 silly lockFile 50c7aeb0-jade-latest jade@latest
+92 info already installed jade@1.9.1
+93 silly resolved []
+94 info build /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+95 verbose linkStuff [ false, false, false, '/Users/alex/dev/cobjet/lessions/calc' ]
+96 info linkStuff calculator@0.0.1
+97 verbose linkBins calculator@0.0.1
+98 verbose linkMans calculator@0.0.1
+99 verbose rebuildBundles calculator@0.0.1
+100 verbose rebuildBundles [ '.bin',
+100 verbose rebuildBundles   'async',
+100 verbose rebuildBundles   'coffee-script',
+100 verbose rebuildBundles   'connect-livereload',
+100 verbose rebuildBundles   'express',
+100 verbose rebuildBundles   'grunt',
+100 verbose rebuildBundles   'grunt-autoprefixer',
+100 verbose rebuildBundles   'grunt-bower-install',
+100 verbose rebuildBundles   'grunt-concurrent',
+100 verbose rebuildBundles   'grunt-contrib-clean',
+100 verbose rebuildBundles   'grunt-contrib-coffee',
+100 verbose rebuildBundles   'grunt-contrib-compass',
+100 verbose rebuildBundles   'grunt-contrib-concat',
+100 verbose rebuildBundles   'grunt-contrib-copy',
+100 verbose rebuildBundles   'grunt-contrib-cssmin',
+100 verbose rebuildBundles   'grunt-contrib-htmlmin',
+100 verbose rebuildBundles   'grunt-contrib-imagemin',
+100 verbose rebuildBundles   'grunt-contrib-jade',
+100 verbose rebuildBundles   'grunt-contrib-jshint',
+100 verbose rebuildBundles   'grunt-contrib-stylus',
+100 verbose rebuildBundles   'grunt-contrib-uglify',
+100 verbose rebuildBundles   'grunt-contrib-watch',
+100 verbose rebuildBundles   'grunt-express-server',
+100 verbose rebuildBundles   'grunt-google-cdn',
+100 verbose rebuildBundles   'grunt-html2js',
+100 verbose rebuildBundles   'grunt-karma',
+100 verbose rebuildBundles   'grunt-newer',
+100 verbose rebuildBundles   'grunt-ngmin',
+100 verbose rebuildBundles   'grunt-open',
+100 verbose rebuildBundles   'grunt-rev',
+100 verbose rebuildBundles   'grunt-svgmin',
+100 verbose rebuildBundles   'grunt-usemin',
+100 verbose rebuildBundles   'jade',
+100 verbose rebuildBundles   'jpegtran-bin',
+100 verbose rebuildBundles   'jshint-stylish',
+100 verbose rebuildBundles   'karma',
+100 verbose rebuildBundles   'karma-chai',
+100 verbose rebuildBundles   'karma-chrome-launcher',
+100 verbose rebuildBundles   'karma-coffee-preprocessor',
+100 verbose rebuildBundles   'karma-firefox-launcher',
+100 verbose rebuildBundles   'karma-html2js-preprocessor',
+100 verbose rebuildBundles   'karma-jasmine',
+100 verbose rebuildBundles   'karma-mocha',
+100 verbose rebuildBundles   'karma-ng-html2js-preprocessor',
+100 verbose rebuildBundles   'karma-ng-scenario',
+100 verbose rebuildBundles   'karma-phantomjs-launcher',
+100 verbose rebuildBundles   'karma-requirejs',
+100 verbose rebuildBundles   'karma-script-launcher',
+100 verbose rebuildBundles   'load-grunt-tasks',
+100 verbose rebuildBundles   'mocha',
+100 verbose rebuildBundles   'mongoose',
+100 verbose rebuildBundles   'requirejs',
+100 verbose rebuildBundles   'time-grunt' ]
+101 verbose rebuild bundle /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6/node_modules/grunt-karma
+102 info build /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6/node_modules/grunt-karma
+103 info preinstall grunt-karma@0.6.2
+104 verbose linkStuff [ false,
+104 verbose linkStuff   false,
+104 verbose linkStuff   false,
+104 verbose linkStuff   '/Users/alex/dev/cobjet/lessions/calc/calculatorjs-6/node_modules' ]
+105 info linkStuff grunt-karma@0.6.2
+106 verbose linkBins grunt-karma@0.6.2
+107 verbose linkMans grunt-karma@0.6.2
+108 verbose rebuildBundles grunt-karma@0.6.2
+109 verbose rebuildBundles [ 'optimist' ]
+110 info install grunt-karma@0.6.2
+111 info postinstall grunt-karma@0.6.2
+112 info install calculator@0.0.1
+113 info postinstall calculator@0.0.1
+114 info prepublish calculator@0.0.1
+115 error peerinvalid The package karma does not satisfy its siblings' peerDependencies requirements!
+115 error peerinvalid Peer karma-ng-scenario@0.1.0 wants karma@>=0.9
+115 error peerinvalid Peer karma-script-launcher@0.1.0 wants karma@>=0.9
+115 error peerinvalid Peer karma-chrome-launcher@0.1.7 wants karma@>=0.9.3
+115 error peerinvalid Peer karma-firefox-launcher@0.1.4 wants karma@>=0.9
+115 error peerinvalid Peer karma-html2js-preprocessor@0.1.0 wants karma@>=0.9
+115 error peerinvalid Peer karma-jasmine@0.1.5 wants karma@>=0.9
+115 error peerinvalid Peer karma-coffee-preprocessor@0.1.3 wants karma@>=0.9
+115 error peerinvalid Peer karma-requirejs@0.2.2 wants karma@>=0.9
+115 error peerinvalid Peer karma-phantomjs-launcher@0.1.4 wants karma@>=0.9
+115 error peerinvalid Peer karma-ng-html2js-preprocessor@0.1.2 wants karma@>=0.9
+115 error peerinvalid Peer karma-mocha@0.1.10 wants karma@>=0.12.8
+115 error peerinvalid Peer karma-chai@0.0.2 wants karma@>=0.9
+115 error peerinvalid Peer grunt-karma@0.6.2 wants karma@~0.10.0
+116 error System Darwin 13.4.0
+117 error command "/Users/alex/.local/n/bin/node" "/Users/alex/.local/n/bin/npm" "install"
+118 error cwd /Users/alex/dev/cobjet/lessions/calc/calculatorjs-6
+119 error node -v v0.10.36
+120 error npm -v 1.4.28
+121 error code EPEERINVALID
+122 verbose exit [ 1, true ]

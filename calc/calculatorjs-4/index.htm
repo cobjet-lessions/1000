@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+<meta name="description" content="The HTML5 Herald">
+<meta name="author" content="Aaron Moradi">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<form id="calculator">
+  <input type="text" id="total" name="totalScreen" value="" />
+  <div id="container">
+    <div id="col1">
+      <button type="button" value="7">7</button>
+      <button type="button" value="4">4</button>
+      <button type="button" value="1">1</button>
+      <button type="button" value="0">0</button>
+      <button type="button" id="equals" value="=">=</button>
+    </div>
+    <div id="col2">
+      <button type="button" value="8">8</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="(">(</button>
+    </div>
+    <div id="col3">
+      <button type="button" value="9">9</button>
+      <button type="button" value="6">6</button>
+      <button type="button" value="3">3</button>
+      <button type="button" value=")">)</button>
+      <button type="button" value=".">.</button>
+      <button type="button" value="delete">del</button>
+    </div>
+    <div id="col4">
+      <button type="button" value="/">&#247;</button>
+      <button type="button" value="*">X</button>
+      <button type="button" value="-">-</button>
+      <button type="button" value="+">+</button>
+      <button type="button" value="^">&#94;</button>
+      <button type="button" value="&#8730;(">&#8730;</button>
+    </div>
+    <div id="col5">
+      <button type="button" id="sin" value="sin(">sin</button>
+      <button type="button" id="cos" value="cos(">cos</button>
+      <button type="button" id="tan" value="tan(">tan</button>
+      <button type="button" id="log" value="log(">log</button>
+      <button type="button" id="e" value="E">E</button>
+      <button type="button" id="&#960;" value="PI">&#960;</button>
+    </div>
+  </div>
+  <span class="clear"></span>
+  <button type="button" value="clear" id="clear" >CLEAR</button>
+</form>
+<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.0.1/math.min.js"></script>-->
+<script src="js/math.min.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>

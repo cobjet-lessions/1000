@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Your Site</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="components/select2/select2.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="settings">
+	<div class="row">
+		<!-- Zurb Foundation docs: If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid -->
+		<div class="small-6 columns">
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<h4>Colors</h4>
+				</div>
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="color-picker-1" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Primary
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="color-picker-2" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Secondary
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="color-picker-3" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Alert
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden full" id="color-picker-4" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Success
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden full" id="color-picker-5" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Color 5
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input multiple type="hidden full" id="color-picker-6" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Color 6
+				</div>
+			</div>
+		</div>
+		<div class="small-6 columns">
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<h4>Background & Typography</h4>
+				</div>
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="color-picker-bg" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Background Color
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="texture-picker" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Texture
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="font-picker-titles" />
+				</div>
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="font-picker-titles" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Titles font stack
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<input type="hidden" id="font-picker" />
+				</div>
+				<div class="small-12 large-6 columns">
+					Font stack
+				</div>
+			</div>
+			<div class="row">
+				<div class="export small-12 columns">
+					<a class="primary small-12 button dropdown" href="#" data-dropdown="drop1">Show Me</a>
+					<ul id="drop1" class="f-dropdown" data-dropdown-content>
+					  <li><a class='export-settings' href="#">Export Settings</a></li>
+					  <li><a href="patterns.html" target="_blank">Patterns</a></li>
+					  <li><a href="templates/banded.html" target="_blank">Banded</a></li>
+					  <li><a href="templates/blog.html" target="_blank">Blog</a></li>
+					  <li><a href="templates/feed.html" target="_blank">Feed</a></li>
+					  <li><a href="templates/grid.html" target="_blank">Grid</a></li>
+					  <li><a href="templates/orbit.html" target="_blank">Orbit</a></li>
+					  <li><a href="templates/banner.html" target="_blank">Banner Home</a></li>
+					  <li><a href="templates/sidebar.html" target="_blank">Sidebar</a></li>
+					  <li><a href="templates/contact.html" target="_blank">Contact</a></li>
+					  <li><a href="templates/marketing.html" target="_blank">Marketing</a></li>
+					  <li><a href="templates/realty.html" target="_blank">Realty</a></li>
+					  <li><a href="templates/so-boxy.html" target="_blank">So Boxy</a></li>
+					  <li><a href="templates/store.html" target="_blank">Store</a></li>
+					  <li><a href="templates/workspace.html" target="_blank">Workspace</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-wrap">
+	<div class="row">
+		<div class="small-12 columns">
+			<!-- <div class="up-arrow"></div> -->
+			<div class="slider">Settings</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-9 large-12 columns">
+		<header class="masthead" role="banner">
+			<div class="logo">
+				<h1>Your Logo</h1>
+			</div>
+			<nav class="menu" role="navigation">
+				<ul>
+					<li><a href="#">Item 1</a>
+					<li><a href="#">Item 2</a>
+					<li><a href="#">Item 3</a>
+					<li><a href="#">Item 4</a>
+					<li><a href="#">Item 5</a>
+				</ul>
+			</nav>
+		</header>
+	</div>
+</div>
+<div class="content" role="main">
+	<div class="row main">
+		<div class="small-6 columns">
+			<section class="item ws-colors">
+				<h1>Colors</h1>
+				<div class="row">
+					<div class="small-6 large-2 columns">
+						<div class="swatch primary"></div>
+					</div>
+					<div class="small-6 large-2 columns">
+						<div class="swatch secondary-color"></div>
+					</div>
+					<div class="small-6 large-2 columns">
+						<div class="swatch alert-color"></div>
+					</div>
+					<div class="small-6 large-2 columns">
+						<div class="swatch success-color"></div>
+					</div>
+					<div class="small-6 large-2 columns">
+						<div class="swatch color-5"></div>
+					</div>
+					<div class="small-6 large-2 columns">
+						<div class="swatch color-6"></div>
+					</div>
+				</div>
+			</section>
+			<section class="item ws-form">
+				<h1>Form</h1>
+				<form>
+		            <div class="row">
+						<div class="small-12 columns">
+			                <label class="error">Company (required)</label>
+			                <input type="text" placeholder="Abc Inc." class="error">
+			                <small class="error">Invalid entry</small>
+			            </div>
+		                <div class="small-12 large-6 columns">
+		                    <label>Email</label>
+							<input type="email" placeholder="your@email.com">
+		                </div>
+		                <div class="small-12 large-6 columns">
+		                    <div class="row collapse">
+		                        <label>URL</label>
+		                        <div class="small-9 columns">
+		                            <input type="text" placeholder="http://mysite">
+		                        </div>
+		                        <div class="small-3 columns">
+		                            <span class="postfix">.com</span>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="small-12 columns">
+		                    <label>Textarea Label</label>
+		                    <textarea placeholder="Alice glanced rather anxiously at the cook, to see if she meant to take the hint; but the cook was busily stirring the soup, and seemed not to be listening..." rows="2"></textarea>
+		                </div>
+		            </div>
+		            <div class="row">
+		            	<div class="small-12 large-6 columns">
+	            			<a href="#" class="button primary">Primary Button</a>
+	            		</div>
+		            	<div class="small-12 large-6 columns">
+	            			<a href="#" class="button secondary">Secondary Button</a>
+	            		</div>
+					</div>
+		            <div class="row">
+		            	<div class="small-12 large-6 columns">
+	            			<a href="#" class="button success">Success Button</a>
+	            		</div>
+		            	<div class="small-12 large-6 columns">
+	            			<a href="#" class="button alert">Alert Button</a>
+	            		</div>
+	            	</div>
+	            	<div class="row">
+	            		<div class="small-12 columns">
+							<small>We use JavaScript so you can preview your color choices, so the button hover shown here is just a simple opacity change&mdash;if you use Foundation for your site, the hover will look much more appealing!</small>
+	            		</div>
+	            	</div>
+		        </form>
+			</section><!-- /.ws-form -->
+		</div>
+		<div class="small-6 columns">
+			<div class="row">
+				<div class="small-12 columns">
+					<section class="item ws-typography">
+						<h1>Typography</h1>
+						<aside>
+							<h1>Level One Heading</h1>
+							<h2>Level Two Heading</h2>
+							<h3>Level Three Heading</h3>
+							<p>Marshall, Will, and Holly on a  <a href="#">routine expedition</a>, met the <em>greatest earthquake ever known</em>. High on the rapids, it <strong>struck</strong> their tiny raft!</p>
+							<p>There's a holdout in the Bronx, Brooklyn's broken out in fights. There's a traffic jam in <a href="#">Harlem</a> that's backed up to Jackson Heights.</p>
+						</aside>
+					</section>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 columns">
+					<section class="item adjectives">
+						<h1>Adjectives</h1>
+						<div class="row">
+							<div class="adj-1 small-12 large-4 columns">
+								Fresh
+							</div>
+							<div class="adj-2 small-12 large-4 columns">
+								Clean
+							</div>
+							<div class="adj-3 small-12 large-4 columns">
+								Fun
+							</div>
+						</div>
+						<div class="row">
+							<div class="adj-4 small-12 large-4 columns">
+								Simple
+							</div>
+							<div class="adj-5 small-12 large-4 columns">
+								Flat
+							</div>
+							<div class="adj-6 small-12 large-4 columns">
+								Modern
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="colophon" role="contentinfo">
+	Project Name
+</footer>
+</div>
+<script src="components/jquery/jquery.js"></script>
+<script src="components/underscore/underscore.js"></script>
+<script src="components/select2/select2.js"></script>
+<script src="scripts/js/colors.js"></script>
+<script src="scripts/js/textures.js"></script>
+<script src="scripts/js/app.js"></script>
+
+<script>
+document.write('<script src=' +
+('__proto__' in {} ? 'components/zepto/zepto' : 'components/jquery/jquery') +
+'.js><\/script>')
+</script>
+    <script src="sass/zurb/js/foundation/foundation.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.alerts.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.clearing.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.cookie.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.dropdown.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.forms.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.interchange.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.joyride.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.magellan.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.orbit.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.placeholder.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.reveal.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.section.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.tooltips.js"></script>
+    <script src="sass/zurb/js/foundation/foundation.topbar.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

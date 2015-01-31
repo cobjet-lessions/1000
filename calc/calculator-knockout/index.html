@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+
+        <!-- add styles -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <!-- add knockout -->
+        <script src="js/knockout.min.js"></script>
+    </head>
+    <body>
+      <div class="container calculator">
+        <div class="row>">
+          <div class="col-12">
+            <div id="commandLine" data-bind="text: commandline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div data-bind="foreach: commands" class="commands">
+                <div class="button button-command" data-bind="value: command, text: text, click: $parent.addCommand, disable: $parent.hasNumbers"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <div data-bind="foreach: numbers" class="numbers">
+                <div class="button button-number" data-bind="value: val, text: val, click: $parent.addNumber"></div>
+            </div>
+            <div class="button button-plus-min" data-bind="click: doToggle">+/-</div>
+          </div>
+          <div class="col-3">
+            <div class="button button-clear" data-bind="click: doClear">C</div>
+            <div class="button button-equal" data-bind="click: doCalculate">=</div>
+          </div>
+        </div>
+      </div>
+      <!-- add script -->
+      <script src="js/main.js"></script>
+    </body>
+</html>
