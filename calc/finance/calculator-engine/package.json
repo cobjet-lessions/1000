@@ -1,0 +1,39 @@
+{
+  "name": "financial-calculator-engine",
+  "version": "0.3.4",
+  "description": "Financial Calculator Engine",
+  "author": {
+    "name": "Pablo De Nadai",
+    "email": "pablodenadai@gmail.com",
+    "url": "pablodenadai.com"
+  },
+  "repository": "financial-calcs/calculator-engine",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "financial",
+    "calculator",
+    "engine",
+    "browserify"
+  ],
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "gulp": "^3.8.10",
+    "gulp-6to5": "^2.0.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-rename": "^1.2.0",
+    "jshint-stylish": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "scripts": {
+    "test": "gulp mocha",
+    "browser": "browserify index.js > browser.js"
+  }
+}
