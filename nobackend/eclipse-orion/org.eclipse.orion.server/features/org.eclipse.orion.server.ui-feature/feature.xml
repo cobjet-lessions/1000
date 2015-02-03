@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.orion.server.ui.feature"
+      label="%featureName"
+      version="8.0.0.qualifier"
+      provider-name="%providerName"
+      plugin="org.eclipse.orion.server.core"
+      license-feature="org.eclipse.license"
+      license-feature-version="1.0.1.qualifier">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.rcp"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.orion.server.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.console"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jface.text"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.variables"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench.texteditor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.compare.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.text"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

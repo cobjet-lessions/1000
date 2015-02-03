@@ -1,0 +1,17 @@
+---
+
+memory: 256M
+path: ./app/
+instances: 1
+
+applications:
+- name: A
+  memory: 512M
+  path: .
+- name: B
+  instances: 2
+  path: .
+- name: C
+  memory: 1024M
+  instances: 2
+- name: D
