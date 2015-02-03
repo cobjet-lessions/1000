@@ -1,0 +1,15 @@
+{
+  "name": "04-example",
+  "version": "0.0.0",
+  "description": "This is a sample application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Burke",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.0.0",
+    "body-parser": "~1.0.2"
+  }
+}

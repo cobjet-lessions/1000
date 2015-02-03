@@ -1,0 +1,33 @@
+{
+  "name": "project-latex-dlfldigi",
+  "version": "0.0.0",
+  "description": "project-latex-dlfldigi ======================",
+  "main": "dlfldigiReceiver.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.6.2",
+    "express": "^4.8.2",
+    "jasmine-node": "^1.14.5",
+      "adler32-js": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node dlfldigiReceiver.js",
+    "test": "jasmine-node test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanGorst/project-latex-dlfldigi.git"
+  },
+  "keywords": [
+    "dl-fldigi"
+  ],
+  "author": "Dan Gorst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanGorst/project-latex-dlfldigi/issues"
+  },
+  "homepage": "https://github.com/DanGorst/project-latex-dlfldigi"
+}

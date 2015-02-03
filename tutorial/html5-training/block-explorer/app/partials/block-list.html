@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="text-center">Block Explorer</h2>
+    <div class="row">
+        <div class="col-md-1">
+          <a href="#/block-list" role="button">
+            <span class="glyphicon glyphicon-chevron-left" ng-click="getPrevious()"></span>
+          </a>
+        </div>
+        <div class="col-md-10">
+          <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Search term" class="form-control" ng-model="query">
+              </div>
+            </form>
+          </div>
+          <div>
+            <progressbar max="90" value="progress" ng-show="progress > 0">Loading blocks...</progressbar>
+          </div>
+          <h3>Block Hashes</h3>
+          <a href="#/block-list/{{block}}" class="list-group-item" ng-repeat="block in blocks | filter: query">{{block}}</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#/block-list" role="button">
+            <span class="glyphicon glyphicon-chevron-right" ng-click="getNext()" ng-show="!isLastPage"></span>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+circle {
+  fill: lightsteelblue;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+  vector-effect: non-scaling-stroke;
+}
+
+text {
+	font-size: 6px;
+}

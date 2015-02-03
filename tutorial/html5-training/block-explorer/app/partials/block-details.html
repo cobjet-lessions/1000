@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <a class="btn btn-lg btn-primary" href="index.html" role="button">Back to main list</a>
+
+  <h2>Hash: {{block.hash}}</h2>
+  <p>Version: {{block.ver}}</p>
+  <p>Previous Block: {{block.prev_block}}</p>
+    <div class="row">
+        <div class="col-md-1">
+            <a class="btn btn-lg btn-primary" role="button" ng-click="verifyBlock()">Verify</a>
+        </div>
+        <div class="col-md-1">
+            <p>{{blockState}}</p>
+        </div>
+    </div>
+
+  <h2>Previous Transactions</h2>
+  <svg></svg>
+
+</div>
