@@ -19,7 +19,7 @@ This app is an example to demonstrate how to make a simple oauth2 server provide
     { "_id" : ObjectId("XXXXXXXXXXXXXXXXXXXXXXXX"), "name" : "Foo Bar", "email" : "foo@example.com", "password" : "123" }
 
 ### Create a client:
-    » db.clients.insert({user_id: ObjectId("XXXXXXXXXXXXXXXXXXXXXXXX"), secret:"abc123", redirect_uri:"http://localhost:3000"})
+    » db.clients.insert({user_id: ObjectId("XXXXXXXXXXXXXXXXXXXXXXXX"), secret:"abc123", redirect_uri:"http://localhost:8888"})
 
 
 ## Edit `client_oauth.sh` ([gist](https://gist.github.com/joaoneto/5360269))

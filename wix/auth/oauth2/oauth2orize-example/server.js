@@ -1,6 +1,7 @@
 var express = require('express'),
   passport = require('passport');
 
+var PORT = 8888;
 // Init app
 var app = module.exports = express();
 
@@ -19,7 +20,7 @@ app.configure(function () {
     store: new SessionStore(),
     maxAge: 7200000
   }));
-  
+
   app.use(passport.initialize());
 
   app.use(app.router);
@@ -36,7 +37,7 @@ app.post('/logout', routes.logout);
 
 app.get('/info', routes.info());
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log('> NODE_ENV:', app.settings.env);
-  console.log('> Express server listening on port:', 3000);
+  console.log('> Express server listening on port:', PORT);
 });
