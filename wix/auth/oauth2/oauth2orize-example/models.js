@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://localhost/oauth2orize');
-mongoose.connect('mongodb://rw:cobjetrw@ds029640.mongolab.com:29640/oauth2orize');
+mongoose.connect('mongodb://localhost/oauth2orize');
 
 // User
 var UserSchema = new mongoose.Schema({
