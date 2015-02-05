@@ -14,15 +14,22 @@ rm -rf "$COOKIE_TMP_FILE"
 
 # LOGIN
 LOGIN=$(curl http://localhost:8888/login -b $COOKIE_TMP_FILE -c $COOKIE_TMP_FILE -d "email=$USER_EMAIL&password=$USER_PASSWORD" --silent)
-echo $LOGIN
+#echo $LOGIN
+#exit 1
 
 # Parse user_id from login
-# USER_ID=$(echo $LOGIN | grep -Po '(?<="id": ")[^"]*')
+USER_ID=$(echo $LOGIN | grep -Po '(?<="id": ")[^"]*')
+#echo $USER_ID
+#exit 1
 
 # AUTHORIZATION
 AUTHORIZATION=$(curl -b $COOKIE_TMP_FILE "http://localhost:8888/authorize/?client_id=$CLIENT_ID&response_type=code&redirect_uri=$REDIRECT_URI" --silent)
 echo $AUTHORIZATION
-#TRANSACTION_ID=$(echo $AUTHORIZATION | grep -Po '(?<="transactionID": ")[^"]*')
+
+exit 1
+
+TRANSACTION_ID=$(echo $AUTHORIZATION | grep -Po '(?<="transactionID": ")[^"]*')
+echo $TRANSACTION_ID
 
 # Workaround to parse code
 WORKAROUND_CODE=$(curl http://localhost:8888/authorize/decision -b $COOKIE_TMP_FILE -d "transaction_id=$TRANSACTION_ID&client_id=$CLIENT_ID" --silent)
