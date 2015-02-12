@@ -16,14 +16,14 @@ This app is an example to demonstrate how to make a simple oauth2 server provide
     » use oauth2orize
     » db.users.insert({name: "Foo Bar", "email": "foo@example.com", password: "123"})
     » db.users.find()
-    { "_id" : ObjectId("XXXXXXXXXXXXXXXXXXXXXXXX"), "name" : "Foo Bar", "email" : "foo@example.com", "password" : "123" }
+    { "_id" : ObjectId("111111111111111111111111"), "name" : "Foo Bar", "email" : "foo@example.com", "password" : "123" }
 
 ### Create a client:
-    » db.clients.insert({user_id: ObjectId("XXXXXXXXXXXXXXXXXXXXXXXX"), secret:"abc123", redirect_uri:"http://localhost:8888"})
+    » db.clients.insert({user_id: ObjectId("111111111111111111111111"), secret:"abc123", redirect_uri:"http://localhost:8888"})
 
 
 ## Edit `client_oauth.sh` ([gist](https://gist.github.com/joaoneto/5360269))
-Change `CLIENT_ID="XXXXXXXXXXXXXXXXXXXXXXXX"`, replace X with your client_id.
+Change `CLIENT_ID="111111111111111111111111"`, replace X with your client_id.
 
 ## Init app
 ```bash
